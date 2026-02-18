@@ -8,8 +8,9 @@ def fun(x,y,op):
   elif op == '/':
     if y != 0:
       return x / y
-    else:
-      return "Error: Division by zero"
+  elif op == '**':
+    res = power(x, y)  
+    return res
   else:
     return "Error: Invalid operator" 
   

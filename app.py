@@ -10,7 +10,7 @@ op = st.selectbox("Select operator:", ["+", "-", "*", "/", "**", "%"])
 submit=st.button('Calculate')
 
 
-#from cal import fun, mulply, divide, add, subtract, power, mod
+#from cal import fun, mulply, dividefe, add, subtract, power, mod
 from cal import *
 result = fun(a, b, op)
 st.write("Result:", result)
@@ -26,5 +26,7 @@ if submit:
     res = divide(a, b)
   elif op == '%':
     res = mod(a, b)
+  elif op == '**':
+    res = power(a, b)  
  
   st.write(f"The Answer is: {res}")          
