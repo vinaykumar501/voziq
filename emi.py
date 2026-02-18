@@ -3,7 +3,7 @@ st.header("EMI Calculator")
 amount=st.number_input("enter the amount:")
 rate=st.number_input("enter the rate of interest:")
 time=st.number_input("enter the time:")
-emi=amount*time*rate/100
+emi=amount*time*rate/100000
 
 
 calulate=st.button('Calculate')
