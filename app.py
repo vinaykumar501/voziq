@@ -5,15 +5,15 @@ st.write("This is a simple Streamlit app.")
 a = st.number_input("Enter the first number:")
 #x = st.number_input("Enter the first number:",1,10)
 b = st.number_input("Enter the second number:")
-op = st.selectbox("Select operator:", ["+", "-", "*", "/", "**", "%"])
+op = st.selectbox("Select operator:", ["+", "-", "*", "/", "**", "%",'Squares'])
 
 submit=st.button('Calculate')
 
 
 #from cal import fun, mulply, dividefe, add, subtract, power, mod
 from cal import *
-result = fun(a, b, op)
-st.write("Result:", result)
+#result = fun(a, b, op)
+#st.write("Result:", result)
 
 if submit:
   if op == '+':
@@ -27,6 +27,8 @@ if submit:
   elif op == '%':
     res = mod(a, b)
   elif op == '**':
-    res = power(a, b)  
+    res = power(a, b) 
+  elif op=='Squares':
+    res = squares(a,b)
  
   st.write(f"The Answer is: {res}")          
