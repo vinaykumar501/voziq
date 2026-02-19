@@ -27,6 +27,8 @@ def subtract(x,y):
   return x - y  
 def power(x,y):
   return x ** y 
+def squares(a,b):
+  return f"{a} square: {a**2},{b} square: {b**2}" 
 def mod(x,y):
   if y != 0:
     return x % y
